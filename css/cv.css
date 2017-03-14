@@ -1,0 +1,13 @@
+.personalinfo, .education, .experience, .skills{
+  margin:1%;
+  background-color: rgba(0,0,0,0.1);
+  padding: 1%;
+  border-radius:14px;
+  width:20%;
+}
+
+@media (max-width:700px){
+  .personalinfo, .education, .experience, .skills{
+    width: 100%;
+  }
+}
