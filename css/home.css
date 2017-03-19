@@ -1,12 +1,49 @@
-
-
-.image{
-  height: 200px;
-  width: 150px;
+section{
+  padding:10%;
+  display: flex;
+  flex-flow:row wrap;
+  background-color: #222;
+  justify-content:space-around;
+  width:80%;
 }
-.cv{
-  transition: transform 2s;
+
+.myname,.cv, .bio{
+  text-align: center;
+  width:20%;
+  margin-bottom: 5px;
+  font-family: 'Nova Oval', cursive;
+  color:#eee;
 }
-.cv:hover{
-  transform: scale(1.2);
+
+.myname:hover  p, .cv:hover  p, .bio:hover p{
+  color: #eee;
+}
+
+.cv:hover p a, .bio:hover p a{
+  color:red;
+}
+
+.myname p, .cv p, .bio p{
+  padding:1%;
+  margin-top:35px;
+  color:transparent;
+  text-align: center;
+  transition: color 2s;
+}
+
+.cv p a, .bio p a{
+  color:transparent;
+  transition: color 2s;
+  margin:0;
+  padding:0;
+}
+
+@media all and (max-width:700px){
+  section{
+    flex-flow:column wrap;
+  }
+
+  .myname, .cv, .bio{
+    width:100%;
+  }
 }

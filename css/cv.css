@@ -1,12 +1,36 @@
+
+section{
+  background-color:#222;
+  padding:3%;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:space-around;
+}
+
 .personalinfo, .education, .experience, .skills{
   margin:1%;
-  background-color: rgba(0,0,0,0.1);
+  color: #eee;
+  font-family: 'Nova Oval', cursive;
   padding: 1%;
   border-radius:14px;
   width:20%;
+  text-align: justify;
+  margin-bottom:45px;
 }
 
-@media (max-width:700px){
+.personalinfo h2, .education h2, .experience h2, .skills h2{
+  color: #3ff;
+}
+
+.education h3, .skills h3{
+  color: #3fa;
+}
+
+.education h4, .skills h4{
+  color:#ffa;
+}
+
+@media all and (max-width:1000px){
   .personalinfo, .education, .experience, .skills{
     width: 100%;
   }

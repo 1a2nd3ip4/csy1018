@@ -1,6 +1,33 @@
-
-
 fieldset{
-  display:flex;
+display: flex;
+flex-flow: column wrap;
+width:30%;
+margin-top:3%;
+}
+label{
+  margin-top:3px;
+}
+ input{
+   width:80%;
+   margin-top:3px;
+   border-radius:4px;
+   transition: transform 1s;
+ }
+ input:hover{
+   transform:scale(1.04);
+   box-shadow: 1px 2px lightblue;
+}
+.form{
+  padding: 1%;
+  display: flex;
   flex-flow: column wrap;
+  border:1px solid black;
+  width:32%;
+}
+section{
+  padding:3%;
+  display: flex;
+  flex-flow:column wrap;
+  justify-content:space-around;
+
 }
