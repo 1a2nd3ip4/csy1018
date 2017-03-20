@@ -14,7 +14,12 @@ section{
   font-family: 'Nova Oval', cursive;
   color:#eee;
 }
-
+.image{
+    transition: transform 3s;
+}
+.image:hover{
+  transform: rotateY(360deg);
+}
 .myname:hover  p, .cv:hover  p, .bio:hover p{
   color: #eee;
 }

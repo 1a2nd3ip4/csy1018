@@ -1,46 +1,47 @@
-
 <!DOCTYPE html>
   <html>
     <head>
       <title>Home page</title>
       <link rel="stylesheet" href="css/style.css"/>
       <link rel="stylesheet" href="css/contact.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nova+Oval" rel="stylesheet">
     </head>
     <body>
       <header>
         <div class="logo">
-          <img src="image/logo.jpg" alt="logo"/>
+          <img src="image/logo.png" class="logo_image" alt="logo image"/>
         </div>
-        <h1 class="title">Contact</h1>
+        <div class="title">
+          <h1>Home</h1>
+        </div>
         <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="cv.html">CV</a>
-          <a href="bio.html">Biography</a>
-          <a href="contact.html">Contact</a>
+          <ul class="menu_item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="bio.html">Biography</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </header>
       <section>
-        <div class="form">
+        <form>
           <label>First Name:</label>
           <input type="text" placeholder="Firstname" />
           <label>Last Name:</label>
           <input type="text" placeholder="Lastname" />
+          <label>E-mail Address:</label>
+          <input type="email" placeholder="email address" />
           <label>Contact Number:</label>
-          <input type="number" placeholder="Contact no." />
-          <label>Date of Birth:</label>
-          <input type="date" placeholder="Date Of Birth" />
-          <label>Gender:</label>
-          <input type="radio" name="gender" value="male"/>Male
-          <input type="radio" name="gender" value="female"/>Female
-          <input type="radio" name="gender" value="other"/>Other
-        </div>
-        <fieldset>
-          <legend>Your Description:</legend>
-          <textarea rows="9" cols="55"></textarea>
-        </fieldset>
+          <input type="text" placeholder="Contact no." />
+          <fieldset>
+            <legend>Your Message:</legend>
+            <textarea rows="9" cols="55" placeholder="Your message here"></textarea>
+          </fieldset>
+          <input type="Submit" value="Send message" class="submit" />
+        </form>
       </section>
       <footer>
-        Copyright &copy; 2017 All Rights Reserved
+		      &copy; Punam Dahal
       </footer>
     </body>
   </html>
