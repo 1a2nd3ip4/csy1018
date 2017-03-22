@@ -38,9 +38,19 @@ section{
 .education h4, .skills h4{
   color:#ffa;
 }
+.image{
+  height:20px;
+  width:20px;
+}
 
-@media all and (max-width:1000px){
+@media all and (max-width:600px)
+{
   .personalinfo, .education, .experience, .skills, .coursework, .activity{
     width: 100%;
+    box-shadow: 0 0 0 0;
+  }
+  section{
+    flex-flow: column wrap;
+    padding:0;
   }
 }

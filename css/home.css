@@ -43,7 +43,7 @@ section{
   padding:0;
 }
 
-@media all and (max-width:700px){
+@media all and (max-width:600px){
   section{
     flex-flow:column wrap;
   }

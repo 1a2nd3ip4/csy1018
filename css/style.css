@@ -61,11 +61,21 @@ header{
 footer{
   background-color: #a7a7a7;
   padding:1%;
-  color:white;
-  text-align: center;
+  color:black;
+  align-items: center;
+  display:flex;
+  flex-flow: column wrap;
+}
+.socialmedia{
+  display: flex;
+  flex-flow: row wrap;
+}
+.social{
+  width:30px;
+  height:30px;
 }
 
-@media all and (max-width:900px){
+@media all and (max-width:600px){
   header{
     display:flex;
     flex-flow: column wrap;
@@ -95,6 +105,10 @@ footer{
   .menu{
     display: flex;
     flex-flow:column wrap;
+    width:100%;
+  }
+  footer{
+    padding:0;
     width:100%;
   }
 }
