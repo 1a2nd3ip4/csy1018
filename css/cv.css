@@ -1,12 +1,10 @@
-
-
 section{
   background-color:#222;
-  padding:3%;
+  padding:1%;
   display: flex;
   flex-flow:row wrap;
   justify-content:space-around;
-  width:94%;
+  width:98%;
 }
 
 .personalinfo, .education, .experience, .skills, .coursework, .activity{
@@ -22,6 +20,7 @@ section{
   border:5px solid ;
   box-shadow: 4px 4px 4px 4px grey;
 }
+
 .personalinfo:hover, .education:hover, .experience:hover, .skills:hover, .coursework:hover, .activity:hover{
   transform: scale(1.01);
   background-color: #212;
@@ -46,11 +45,13 @@ section{
 @media all and (max-width:600px)
 {
   .personalinfo, .education, .experience, .skills, .coursework, .activity{
-    width: 100%;
+    width: 94%;
     box-shadow: 0 0 0 0;
   }
+
   section{
     flex-flow: column wrap;
-    padding:0;
+    width:98%;
+    justify-content: center;
   }
 }
