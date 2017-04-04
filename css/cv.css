@@ -1,12 +1,14 @@
+/*Styling section of CV page*/
 section{
-  background-color:#222;
+  background-color:#777;
   padding:1%;
   display: flex;
-  flex-flow:row wrap;
+  flex-flow:row wrap; /* Displays CV sections in row*/
   justify-content:space-around;
   width:98%;
 }
 
+/* Styling the sections of CV.. Make boxes and shadows for those boxes..*/
 .personalinfo, .education, .experience, .skills, .coursework, .activity{
   margin:0.5%;
   color: #eee;
@@ -16,15 +18,18 @@ section{
   width:25%;
   text-align: justify;
   margin-bottom:45px;
-  transition: transform 0.5s;
+  transition: transform 0.5s; /* Transform the boxes*/
   border:5px solid ;
   box-shadow: 4px 4px 4px 4px grey;
+  background-color:#333;
 }
 
 .personalinfo:hover, .education:hover, .experience:hover, .skills:hover, .coursework:hover, .activity:hover{
-  transform: scale(1.01);
+  transform: scale(1.01); /* Scale CV boxes on hover*/
   background-color: #212;
 }
+
+/* Changing colors of h2, h3, and h4 for the page*/
 
 .personalinfo h2, .education h2, .experience h2, .skills h2, .coursework h2, .activity h2{
   color: #3ff;
@@ -37,11 +42,8 @@ section{
 .education h4, .skills h4{
   color:#ffa;
 }
-.image{
-  height:20px;
-  width:20px;
-}
 
+/* Making the page mobile responsive.. This works when the device width is less than 600px */
 @media all and (max-width:600px)
 {
   .personalinfo, .education, .experience, .skills, .coursework, .activity{

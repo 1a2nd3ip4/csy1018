@@ -1,30 +1,30 @@
-
+/*Styling the main section of contact page*/
 section{
-  background-color: #222;
+  background-color: #777;
   color:#eee;
-  padding: 1%;
+  padding: 2%;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  flex-flow: column wrap; /* To display contents in column*/
+  align-items: center; /* Aligns all the contents in center*/
 }
-.radio{
-  display: flex;
-  flex-flow: row wrap;
-}
+
+/* Styling the contact form..*/
 form{
   display: flex;
-  flex-flow: column wrap;
-  background-color:#212;
+  flex-flow: column wrap; /* To display the fields of form in column..*/
+  background-color:#333;
   align-items: center;
-  padding:1%;
+  padding:5px 2%;
   width:40%;
   color:white;
-  box-shadow: 4px 4px 4px 4px black;
+  box-shadow: 4px 4px 4px 4px black; /* To give shadow to the form*/
 }
+
+/* Styling the input fields of the form*/
 input{
   text-align: center;
   height: 25px;
-  margin-top:1%;
+  margin-top:5px;
   width:70%;
 }
 
@@ -32,25 +32,30 @@ fieldset{
   text-align: center;
   width:70%;
   margin:0;
-  margin-top: 1%;
+  margin-top:5px;
   padding:0;
   font-family:'Indie Flower', cursive  ;
 }
+
+/*Styling labels for the fields*/
 label{
-  margin-top: 1%;
+  margin-top: 5px;
   font-family:'Indie Flower', cursive  ;
 }
+
 textarea{
   width:95%;
 }
+
 .submit{
-  margin-top:2%;
+  margin-top:5px;
   width:25%;
   border-radius: 5%;
   font-weight: bold;
   font-family:'Indie Flower', cursive ;
 }
 
+/* To make mobile responsive of the page*/
 @media all and (max-width:600px){
   form{
     width:100%;

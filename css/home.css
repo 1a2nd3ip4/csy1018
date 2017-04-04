@@ -1,25 +1,32 @@
+/* Styling the home page of my portfolio...*/
+
+/* Styling the sections of homepage */
 section{
   padding:10%;
   display: flex;
-  flex-flow:row wrap;
-  background-color: #222;
+  flex-flow:row wrap; /* Putting the contents of the section in row..*/
+  background-color: #333;
   justify-content:space-around;
   width:80%;
 }
 
-.myname,.cv, .bio{
+/* Defining the width and other properties of 3 blocks of homepage...*/
+.myname, .cv, .bio{
   text-align: center;
   width:20%;
   margin-bottom: 5px;
   font-family: 'Nova Oval', cursive;
   color:#eee;
 }
+
 .image{
-    transition: transform 3s;
+    transition: transform 3s; /* Applying transition property for images..*/
 }
+
 .image:hover{
-  transform: rotateY(360deg);
+  transform: rotateY(360deg); /* Rotate images on hover*/
 }
+
 .myname:hover  p, .cv:hover  p, .bio:hover p{
   color: #eee;
 }
@@ -28,6 +35,7 @@ section{
   color:red;
 }
 
+/* Styling paragraph elements inside the blocks in homepage*/
 .myname p, .cv p, .bio p{
   padding:1%;
   margin-top:35px;
@@ -43,6 +51,7 @@ section{
   padding:0;
 }
 
+/* Making the page mobile responsive...*/
 @media all and (max-width:600px){
   section{
     flex-flow:column wrap;
