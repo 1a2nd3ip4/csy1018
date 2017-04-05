@@ -27,6 +27,7 @@ section{
 .personalinfo:hover, .education:hover, .experience:hover, .skills:hover, .coursework:hover, .activity:hover{
   transform: scale(1.01); /* Scale CV boxes on hover*/
   background-color: #212;
+  box-shadow:4px 4px 4px 4px black;
 }
 
 /* Changing colors of h2, h3, and h4 for the page*/
