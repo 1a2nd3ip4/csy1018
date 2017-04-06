@@ -1,12 +1,8 @@
-
+/* Name: Punam Dahal
+	UN ID: 17421487 */
 section{
-background-color: #777;
 font-family: 'Nova Oval', cursive;
-display:flex;
-flex-flow: column wrap; /* Display the contents of section in column*/
 padding:1% 3%;
-justify-content:space-around;
-align-items: center;
 width: 94%;
 }
 
@@ -14,15 +10,12 @@ width: 94%;
 .main{
   text-align: justify;
   margin:0px 25%;
-  background-color:#333;
   padding:1%;
   width:50%;
-  color:white;
-  box-shadow: 4px 4px 4px 4px black;
 }
 
 .text h3{
-  color:#3fa;
+  color:red;
 }
 
 /* Specifying image's alignment.. Making picture be at center*/
@@ -30,7 +23,12 @@ width: 94%;
   text-align: center;
 }
 
+.profile{
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
 
+/* To make mobile responsive of the page*/
 @media all and (max-width:600px)
 {
   .main{

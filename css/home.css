@@ -1,3 +1,5 @@
+/* Name: Punam Dahal
+	UN ID: 17421487 */
 /* Styling the home page of my portfolio...*/
 
 /* Styling the sections of homepage */
@@ -5,8 +7,7 @@ section{
   padding:10%;
   display: flex;
   flex-flow:row wrap; /* Putting the contents of the section in row..*/
-  background-color: #333;
-  justify-content:space-around;
+  justify-content:space-between;
   width:80%;
 }
 
@@ -14,7 +15,7 @@ section{
 .myname, .cv, .bio{
   text-align: center;
   width:20%;
-  margin-bottom: 5px;
+  margin-bottom:15px;
   font-family: 'Nova Oval', cursive;
   color:#eee;
 }
@@ -25,10 +26,6 @@ section{
 
 .image:hover{
   transform: rotateY(360deg); /* Rotate images on hover*/
-}
-
-.myname:hover  p, .cv:hover  p, .bio:hover p{
-  color: #eee;
 }
 
 .cv:hover p a, .bio:hover p a{
@@ -44,6 +41,11 @@ section{
   transition: color 2s;
 }
 
+.myname:hover  p, .cv:hover  p, .bio:hover p{
+  color: black;
+  font-weight: bold;
+}
+
 .cv p a, .bio p a{
   color:transparent;
   transition: color 2s;
@@ -51,7 +53,7 @@ section{
   padding:0;
 }
 
-/* Making the page mobile responsive...*/
+/*Using media query for responsive page design*/
 @media all and (max-width:600px){
   section{
     flex-flow:column wrap;

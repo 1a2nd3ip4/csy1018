@@ -1,6 +1,7 @@
+/* Name: Punam Dahal
+	UN ID: 17421487 */
 /*Styling section of CV page*/
 section{
-  background-color:#777;
   padding:1%;
   display: flex;
   flex-flow:row wrap; /* Displays CV sections in row*/
@@ -11,37 +12,34 @@ section{
 /* Styling the sections of CV.. Make boxes and shadows for those boxes..*/
 .personalinfo, .education, .experience, .skills, .coursework, .activity{
   margin:0.5%;
-  color: #eee;
+  color: black;
   font-family: 'Nova Oval', cursive;
   padding: 1%;
   border-radius:14px;
   width:25%;
   text-align: justify;
-  margin-bottom:45px;
   transition: transform 0.5s; /* Transform the boxes*/
-  border:5px solid ;
-  box-shadow: 4px 4px 4px 4px grey;
-  background-color:#333;
+  /*background-color: rgba(0,0,0,0.5);*/
 }
 
 .personalinfo:hover, .education:hover, .experience:hover, .skills:hover, .coursework:hover, .activity:hover{
   transform: scale(1.01); /* Scale CV boxes on hover*/
-  background-color: #212;
+  background-color: #eee;
   box-shadow:4px 4px 4px 4px black;
 }
 
 /* Changing colors of h2, h3, and h4 for the page*/
 
 .personalinfo h2, .education h2, .experience h2, .skills h2, .coursework h2, .activity h2{
-  color: #3ff;
+  color: #222;
 }
 
 .education h3, .skills h3{
-  color: #3fa;
+  color: #00f;
 }
 
 .education h4, .skills h4{
-  color:#ffa;
+  color:#00f;
 }
 
 /* Making the page mobile responsive.. This works when the device width is less than 600px */
@@ -56,5 +54,9 @@ section{
     flex-flow: column wrap;
     width:98%;
     justify-content: center;
+  }
+
+  .personalinfo, .education, .experience, .skills, .coursework, .activity{
+    margin-bottom: 10px;
   }
 }

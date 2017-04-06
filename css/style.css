@@ -1,22 +1,33 @@
-/*This is the CSS file commmon to all the pages of my portfolio.
-  This CSS file styles header, footer and all elements inside them.
-*/
+/* Name: Punam Dahal
+	UN ID: 17421487 */
+/*The CSS file commmon to all the pages of my portfolio.
+  The CSS file styles header, footer and all elements inside them.*/
 
 /*Set the margin and padding of the document to 0 on all sides*/
 body{
   margin:0%;
   padding:0%;
+  background-position: left top;
+  background-repeat:repeat;
+  animation-name:bgchange;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes bgchange {
+  0% {background-image:url(../image/bg3.jpg);}
+  50% {background-image:url(../image/bg4.jpg);}
+  100% {background-image:url(../image/bg3.jpg);}
+}
 /*Style the header of the document */
 header{
-  width:96%;
   padding:1% 2% 0% 2%;
-  background:linear-gradient(to top, #eef, #eef); /*A gradient color to the header*/
+  background:linear-gradient(to top, transparent, lightgreen, #a193ff);/*A gradient color to the header*/
   display: flex; /* Displays in flex row form, and justifies the elements within the header*/
   flex-flow:row wrap;
   justify-content: space-between;
 }
+
 
 /*Styling the division containing logo of the page*/
 .logo{
@@ -27,58 +38,53 @@ header{
 /*Format the title text of a page*/
 .title{
   font-family: 'Nova Oval', sans-serif; /*Apply google font*/
-  width:55%;
+  width:50%;
   padding-top:25px;
   margin:0;
 }
 
 /*Cascading styles for navigations*/
-.menu{
-  display: flex;
-  flex-flow:column wrap;
-  justify-content: flex-end;
-  width:35%;
-}
-
 /*Put all the menus in a row*/
 .menu_item{
+  width:40%;
   display:flex;
   flex-flow:row wrap;
   justify-content: space-around;
   list-style: none;
-  align-items: center;
+  align-items: flex-start;
   margin:0;
   padding:0;
 }
 
 /*Each menu item's css*/
 .menu_item li{
-  padding: 15px;
+  padding: 7px 15px;
   margin:0;
 }
 
 /*Change background of each menu on hover*/
 .menu_item li:hover{
-  background-color: #ffffff;
-  box-shadow : 0px 10px 2px -4px #222; /* Shadow to the bottom of the menubar*/
+  background-color: rgba(0,0,0,0.2);
+  box-shadow : 0px 8px 2px -4px #222;  /* Shadow to the bottom of the menubar*/
+  border-radius:20px;
 }
 
 /*Styling the visuals of link assigned to menus*/
 .menu_item li a{
-  text-decoration: none;
-  font-weight: bolder;
-  font-size: 1.250em;
+  font-size: 1.25em;
   color:black;
+  font-weight: bold;
   font-family: 'Indie Flower', cursive;
   margin:0;
   padding:0;
+  text-decoration: none;
 }
 
 /*Styling the footer*/
 footer{
-  background-color: #a7a7a7;
+  background-color: black;
   padding:1%;
-  color:black;
+  color:#eee;
   align-items: center;
   display:flex;
   flex-flow: column wrap;
@@ -116,7 +122,7 @@ footer{
   }
 
   .menu_item{
-    width:100%;
+    width:96%;
     flex-flow: column wrap;
   }
 
@@ -125,11 +131,6 @@ footer{
     text-align: center;
   }
 
-  .menu{
-    display: flex;
-    flex-flow:column wrap;
-    width:100%;
-  }
   footer{
     width:98%;
   }
