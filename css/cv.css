@@ -1,5 +1,7 @@
-/* Name: Punam Dahal
+/* 1a2nd3ip4.github.io/csy1018/
+  Name: Punam Dahal
 	UN ID: 17421487 */
+
 /*Styling section of CV page*/
 section{
   padding:1%;
@@ -19,7 +21,6 @@ section{
   width:25%;
   text-align: justify;
   transition: transform 0.5s; /* Transform the boxes*/
-  /*background-color: rgba(0,0,0,0.5);*/
 }
 
 .personalinfo:hover, .education:hover, .experience:hover, .skills:hover, .coursework:hover, .activity:hover{
@@ -48,15 +49,12 @@ section{
   .personalinfo, .education, .experience, .skills, .coursework, .activity{
     width: 94%;
     box-shadow: 0 0 0 0;
+    margin-bottom: 10px;
   }
 
   section{
     flex-flow: column wrap;
     width:98%;
     justify-content: center;
-  }
-
-  .personalinfo, .education, .experience, .skills, .coursework, .activity{
-    margin-bottom: 10px;
   }
 }

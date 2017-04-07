@@ -1,10 +1,12 @@
-/* Name: Punam Dahal
+/* 1a2nd3ip4.github.io/csy1018/
+  Name: Punam Dahal
 	UN ID: 17421487 */
+
 /* Styling the home page of my portfolio...*/
 
 /* Styling the sections of homepage */
 section{
-  padding:10%;
+  padding:5%;
   display: flex;
   flex-flow:row wrap; /* Putting the contents of the section in row..*/
   justify-content:space-between;
@@ -21,19 +23,21 @@ section{
 }
 
 .image{
-    transition: transform 3s; /* Applying transition property for images..*/
+  border-top-left-radius:25%;
+  border-bottom-right-radius:25%;
+  transition: transform 3s; /* Applying transition property for images..*/
 }
 
 .image:hover{
   transform: rotateY(360deg); /* Rotate images on hover*/
 }
 
-.cv:hover p a, .bio:hover p a{
+.cv:hover h3 a, .bio:hover h3 a{
   color:red;
 }
 
 /* Styling paragraph elements inside the blocks in homepage*/
-.myname p, .cv p, .bio p{
+.myname h3, .cv h3, .bio h3{
   padding:1%;
   margin-top:35px;
   color:transparent;
@@ -41,12 +45,12 @@ section{
   transition: color 2s;
 }
 
-.myname:hover  p, .cv:hover  p, .bio:hover p{
+.myname:hover  h3, .cv:hover  h3, .bio:hover h3{
   color: black;
   font-weight: bold;
 }
 
-.cv p a, .bio p a{
+.cv h3 a, .bio h3 a{
   color:transparent;
   transition: color 2s;
   margin:0;
